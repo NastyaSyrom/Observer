@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.task4.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <ImageView fx:id="trash" fitHeight="260.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true" />
+   <AnchorPane prefHeight="146.0" prefWidth="338.0">
+      <children>
+         <Button layoutX="14.0" layoutY="24.0" mnemonicParsing="false" onAction="#onStartButtonClick" prefHeight="26.0" prefWidth="63.0" text="Запуск" textFill="#15e754" />
+         <Button layoutX="95.0" layoutY="60.0" mnemonicParsing="false" onAction="#onBackButtonClick" prefHeight="26.0" prefWidth="63.0" text="Назад" textAlignment="CENTER" />
+         <Button layoutX="177.0" layoutY="60.0" mnemonicParsing="false" onAction="#onNextButtonClick" prefHeight="26.0" prefWidth="63.0" text="Вперед" textAlignment="CENTER" />
+         <Button layoutX="260.0" layoutY="24.0" mnemonicParsing="false" onAction="#onStopButtonClick" prefHeight="26.0" prefWidth="63.0" text="Стоп" textAlignment="RIGHT" textFill="#e42121" />
+         <Label layoutX="177.0" layoutY="106.0" prefHeight="26.0" prefWidth="97.0" text="Номер слайда:" />
+         <TextField fx:id="numSlide" layoutX="280.0" layoutY="106.0" prefHeight="26.0" prefWidth="43.0" />
+      </children>
+   </AnchorPane>
+</VBox>
